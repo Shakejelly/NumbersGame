@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.Design;
+﻿
+using System.ComponentModel.Design;
 
 internal class Program
 {
@@ -6,16 +7,16 @@ internal class Program
     {
         bool hej = true;
         Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
-        Random random = new Random();
+        Random random = new Random(); 
         int number = random.Next(1, 20);
 
         // int guess = Convert.ToInt32(Console.ReadLine());
         
         
-        int tries = 5;
+        int tries = 5; //Försök man får på sig att gissa rätt
         
         {
-            for (int i = 0; i < tries; i++)
+            for (int i = 0; i < tries; i++) //Loopar antal försök man får.
             {
                 int guess = int.Parse(Console.ReadLine());
 
